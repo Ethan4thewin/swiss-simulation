@@ -31,6 +31,18 @@ Rounds: Teams are paired according to the Swiss format rules, and the results of
 
 Qualification: The simulation tracks how often professional teams qualify for the knockout stage compared to semi-professional teams.
 
+## Results
+### 8 teams are drawn in swiss format randomly against each other without initial restrictions
+Multiple runs from 100 - 1000000 simulations concurrently reveals:
+- Average pro teams qualified: 5.8 ± 0.2
+- Average semi-pro teams qualified: 2.13 ± 0.2
+- Average pro qualification rate: 72% - 76%
+- Average semi-pro qualification rate: 24 - 28%
+
+This means:
+- The ratio of qualified teams is approximately 3:1 in favor of pro teams, which can be acceptable since the stronger teams are not automatically qualified, whereas the semi-pro teams have a reasonable chance to qualify.
+- The Swiss format seems to be a suitable options for rewarding skill (a clear seperation of skill between 2 levels of teams) while maintaining uncertainty (there's still room for "upsets" or strong performances from semi-pro teams).
+
 ## Future Work
 - Fine-tuning the skill gap between professional and semi-professional teams.
 - Testing with different scenarios, such as varying the number of teams or the number of rounds.
