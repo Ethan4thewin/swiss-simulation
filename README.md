@@ -4,6 +4,10 @@ The goal of the simulation is to observe how 8 professional teams perform compar
 The simulation evaluates whether professional teams generally qualify over semi-professional teams under this format.
 
 ## Tournament Format Overview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7ae5537d-58e0-40df-a079-d8e4d1a845b5" alt="Worlds 2023 Swiss Format"/>
+</p>
+
 - Swiss Format: Teams are placed in a single group, but do not play against all other teams. Instead, they are matched against opponents with the same win-loss record in each round.
 - Matchups: After each round, teams with identical records (e.g., 1-0 vs. 1-0) face each other. This ensures more even matchups as the tournament progresses.
 
@@ -30,6 +34,18 @@ Teams: The simulation considers 16 teams, divided into two groups:
 Rounds: Teams are paired according to the Swiss format rules, and the results of each match are simulated based on pre-determined skill levels.
 
 Qualification: The simulation tracks how often professional teams qualify for the knockout stage compared to semi-professional teams.
+
+## Simulation Methodology
+This Monte Carlo simulation:
+- Runs N independent tournament simulations (N ranging from 100 to 1,000,000)
+- For each simulation:
+  * Randomly pairs teams according to Swiss format rules
+  * Simulates match outcomes based on team skill levels
+  * Tracks qualification results
+- Aggregates results across all simulations to estimate:
+  * Expected number of qualified teams from each skill tier
+  * Qualification probabilities for pro vs semi-pro teams
+  * Confidence intervals for these estimates
 
 ## Results
 ### 8 teams are drawn in swiss format randomly against each other without initial restrictions
